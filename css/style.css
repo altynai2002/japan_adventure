@@ -58,6 +58,29 @@ img {
     margin: 0 auto;
 }
 
+.wrapper-full {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /* header style starts */
 
 .header {
@@ -255,3 +278,109 @@ img {
     background: url(../img/arrowLearnMore.svg) no-repeat right center;
 }
 /* benefits style ends*/
+
+
+/* places style starts*/
+
+.places { 
+    margin-bottom: 131px;
+}
+
+.places-title {
+    margin-right: 15px;
+}
+
+.places-caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.places-view__all {
+    text-decoration: none;
+    color: #006DFE;
+    font-size: 16px;
+    font-weight: 400;
+    background: url(../img/arrowLearnMore.svg) no-repeat right center;
+    padding-right: 59px;
+}
+
+.places-view__all:hover, .places-view__all:focus {
+    opacity: .65;
+}
+
+.places-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.places-card:hover, .places-card__pic {
+    transform: scale(1.005);
+}
+
+.places-card::after {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.40);;
+}
+
+.places-card__size_lg {
+    margin: 0;
+    grid-column: span 3;
+}
+
+.places-card__pic {
+    width: 100%;
+    transition: .15s all;
+}
+
+.places-card__pic__lg {
+    height: 354px;
+    object-fit: cover;
+}
+
+.places-card__pic__sm {
+    height: 283px;
+    object-fit: cover;
+}
+
+
+.places-card__title {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 700;
+    bottom: 27px;
+    left: 29px;
+    position: absolute;
+    z-index: 3;
+}
+
+.places-card__link {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+}
+
+.places-card__size_sm {
+    margin: 0;
+    grid-column: span 2;
+}
+
+/* places style ends*/

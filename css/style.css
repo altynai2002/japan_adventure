@@ -384,3 +384,143 @@ img {
 }
 
 /* places style ends*/
+
+/* tours style starts*/
+
+.tours {
+    margin-bottom: 139px;
+}
+
+.tours-tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 77px;
+}
+
+.tour-info {
+    padding-left: 47px;
+}
+
+.tour-title {
+    max-width: 357px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.tour-desc {
+    max-width: 519px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+    margin-top: 85px;
+}
+
+.tour-link {
+    color: #006DFE;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    background: url(../img/arrowLearnMore.svg) no-repeat right center;
+    padding-right: 59px;
+}
+
+.tour-link:hover, .tour-link:focus {
+    opacity: .65;
+}
+/* tours style ends*/
+
+/* top places style starts*/
+
+.top {
+    margin-bottom: 86px;
+}
+
+.top-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 58px;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-title {
+    margin-bottom: 54px;
+}
+
+.top-card__pic {
+    position: relative;
+}
+
+.top-card__stats {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(21, 24, 36, 0.60);
+}
+
+.top-card__title {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 auto 0 0;
+}
+
+.top-card__likes {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-right: 20px;
+    margin-right: 14px;
+    background: url(../img/likes.svg) no-repeat right;
+}
+
+.top-card__comments {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-right: 23px;
+    background: url(../img/comments.svg) no-repeat right;
+}
+
+.top-card__desc {
+    max-width: 391px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 45px;
+    margin-bottom: 31px;
+}
+
+.top-card__seeMore {
+    width: 118px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #006DFE;
+    padding: 12px 19px;
+    border: 0;
+    text-decoration: none;
+    margin: auto 0 0;
+}
+
+.top-card__seeMore:active, .top-card__seeMore:focus, .top-card__seeMore:hover {
+    opacity: .85;
+}
+
+/* top places style ends*/

@@ -105,7 +105,71 @@ img {
 /* intro style starts */
 
 .intro {
-    height: 100vh;
+    min-height: 100vh;
     background: url("../img/introBg.jpg") no-repeat center;
     background-size: cover;
+    padding-top: 263px;
 }
+
+.intro-title {
+    max-width: 619px;
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 22px;
+}
+
+.intro-subtitle { 
+    max-width: 546px;
+    margin-bottom: 59px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.search-form__wrap {
+    border: 0;
+}
+
+.search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field {
+    width: 297px;
+    background: transparent url(../img/circle-icon.svg) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.search-form__field::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.search-form__submit {
+    background: #1B7DFF;
+    padding: 15px 39px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.search-form__submit:focus, .search-form__submit:active, .search-form__submit:hover {
+    background: #0f4389;
+} 
+
+/* intro style ends */
